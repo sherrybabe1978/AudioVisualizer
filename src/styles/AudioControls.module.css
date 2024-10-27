@@ -1,0 +1,89 @@
+.audioControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: #080808;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.playPauseButton,
+.skipButton,
+.muteButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #080808;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.seekBar,
+.volumeControl {
+  width: 30%;
+  margin: 0 10px;
+}
+
+.timeDisplay {
+  font-family: monospace;
+  min-width: 80px;
+  text-align: center;
+  margin: 0 10px;
+  color: white; /* Ensure time display text is white */
+}
+
+.speedControl {
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #2a2828;
+  color: white; /* Change dropdown text color to white */
+  background-color: #080808; /* Change dropdown background color */
+}
+
+.speedControl option {
+  color: white; /* Change options text color to white */
+  background-color: #393434; /* Change options background color */
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .audioControls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .seekBar,
+  .volumeControl {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .playPauseButton,
+  .skipButton,
+  .muteButton {
+    margin: 5px 0;
+  }
+
+  .timeDisplay,
+  .speedControl {
+    margin: 5px 0;
+  }
+}
