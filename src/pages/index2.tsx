@@ -37,7 +37,7 @@ export default function Home() {
       </Head>
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
-          <AudioVisualizer audioSrc="/how_ai_learns.wav" />
+          <AudioVisualizer audioSrc="/how_ai_thinks.wav" />
         </main>
       </div>
     </>
